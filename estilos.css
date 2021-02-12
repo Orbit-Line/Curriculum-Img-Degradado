@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*---------degradado---------*/
+body{
+    margin:0;
+    min-height: 100vh;
+    z-index: 2000;
+    background-image: url(img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /*para centrar texto
+    display: flex;
+    justify-content: center;
+    justify-items: center;*/
+}
+body:before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(90deg,#52c4df,#ad55c1);
+    margin-top: 100px;
+    
+    opacity: 0.4;
+    z-index: -1;
+}
+/*---------Logo----------*/
+header img {
+    width: 70px;
+    float:  left;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    border-radius: 100%;
+}
+header{
+ width: 100%;
+ height: 80px;
+ background: darkseagreen;
+ color: darkslategray;
+ padding-top: 0.5em;
+ padding-bottom: 1em;
+}
+/*-----leyenda-------*/
+h1 {
+    padding-top: 1em;
+    text-align: left;
+    
+    font-family: Pasifico,cursive;
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+}
+/*-------Titulos---*/
+section{
+    width: 70%;
+    margin: 0 auto;
+}
+article {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px double darkblue;
+}
+article h3 {
+    float: left;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 5px;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+article p {
+    margin-left: 20%;
+}
+article p, article ul { /*importante% para separac. de parrafos*/
+    margin-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 22, 22);
+    line-height: 1.3em;
+    margin-bottom: 1.6em;
+}
+article ul li{
+    margin-left: 15px;
+    list-style: square;
+}
+
+footer {
+    margin-top: 2.5em;
+    padding: 1em;
+    width: 100%;
+    background: darkseagreen;
+    color: rgb(50, 70, 70);
+    text-align: center;
+}
+/* color a enlaces---
+    footer a:link  footer a:visited{
+    color: azure;
+}*/
+footer a:hover{
+    text-decoration: none;
+    color: red;
+}
